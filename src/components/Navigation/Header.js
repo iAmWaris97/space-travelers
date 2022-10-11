@@ -1,4 +1,5 @@
 import './Header.css';
+import { NavLink } from 'react-router-dom';
 import Logo from './img/planet.png';
 
 const Header = () => (
@@ -9,9 +10,15 @@ const Header = () => (
     </div>
     <nav className="navbar">
       <ul className="nav-list flex">
-        <li>Rockets</li>
-        <li>Missions</li>
-        <li>My Profile</li>
+        <li>
+          <NavLink to="/"> Rockets </NavLink>
+        </li>
+        <li>
+          <NavLink to="/missions"> Missions </NavLink>
+        </li>
+        <li>
+          <NavLink to="/profile"> My Profle </NavLink>
+        </li>
       </ul>
     </nav>
   </header>
