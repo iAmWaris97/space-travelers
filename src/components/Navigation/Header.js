@@ -11,7 +11,7 @@ const Header = () => (
     <nav className="navbar">
       <ul className="nav-list flex">
         <li>
-          <NavLink to="/">Rockets </NavLink>
+          <NavLink to="/"> Rockets </NavLink>
         </li>
         <li>
           <NavLink to="/missions"> Missions </NavLink>
