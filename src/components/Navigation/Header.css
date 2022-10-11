@@ -1,0 +1,36 @@
+.flex {
+  display: flex;
+}
+
+header {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid blue;
+  padding: 8px 30px;
+}
+
+.logo {
+  align-items: center;
+  gap: 30px;
+}
+
+.logo-img {
+  height: 50px;
+  width: 50px;
+}
+
+.logo-title {
+  font-size: x-large;
+}
+
+.nav-list {
+  gap: 10px;
+}
+
+.nav-list li {
+  color: blue;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+}
