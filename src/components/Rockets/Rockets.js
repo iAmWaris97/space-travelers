@@ -13,7 +13,7 @@ const Rockets = () => {
     }
   });
   return (
-    <div className="Rockets">
+    <div className="rockets">
       {rocketsData.map((rocketData) => (
         <Rocket key={rocketData.id} rocket={rocketData} />
       ))}

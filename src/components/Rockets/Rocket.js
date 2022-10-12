@@ -3,11 +3,19 @@ import PropTypes from 'prop-types';
 const Rocket = (props) => {
   const { rocket } = props;
   return (
-    <div className="rocket">
-      <h2>
-        {' '}
-        {rocket.rocket_name}
-      </h2>
+    <div className="rocket-card flex">
+      <div className="rocket-image">
+        <img src={rocket.flickr_images[0]} alt={rocket.rocket_name} />
+      </div>
+
+      <div className="rocket-detail">
+        <div className="rocket-name">
+          <span>{rocket.rocket_name}</span>
+        </div>
+        <div className="rocket-description">
+          <span>{rocket.description}</span>
+        </div>
+      </div>
     </div>
   );
 };
@@ -15,6 +23,8 @@ const Rocket = (props) => {
 Rocket.propTypes = {
   rocket: PropTypes.shape({
     rocket_name: PropTypes.string,
+    description: PropTypes.string,
+    flickr_images: PropTypes.arrayOf(PropTypes.string),
   }).isRequired,
 };
 
