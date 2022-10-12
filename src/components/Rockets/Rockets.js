@@ -1,22 +1,24 @@
 import './Rockets.css';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchRockets } from '../../redux/Rockets/rocketsSlice';
 import Rocket from './Rocket';
 
-const Rockets = () => (
-  <div className="rockets">
-    <ul>
-      <li className="rocket">
-        <Rocket name="Falcon 1" description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum explicabo harum debitis." />
-      </li>
-
-      <li className="rocket">
-        <Rocket name="Falcon 9" description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum explicabo harum debitis." />
-      </li>
-
-      <li className="rocket">
-        <Rocket name="Falcon Heavy" description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum explicabo harum debitis." />
-      </li>
-    </ul>
-  </div>
-);
+const Rockets = () => {
+  const dispatch = useDispatch();
+  const rocketsData = useSelector((state) => state.rockets);
+  useEffect(() => {
+    if (!rocketsData.length) {
+      dispatch(fetchRockets());
+    }
+  });
+  return (
+    <div className="Rockets">
+      {rocketsData.map((rocketData) => (
+        <Rocket key={rocketData.id} rocket={rocketData} />
+      ))}
+    </div>
+  );
+};
 
 export default Rockets;
