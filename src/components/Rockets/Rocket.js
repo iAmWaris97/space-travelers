@@ -4,8 +4,8 @@ const Rocket = (props) => {
   const { rocket } = props;
   return (
     <div className="rocket-card flex">
-      <div className="rocket-image">
-        <img src={rocket.flickr_images[0]} alt={rocket.rocket_name} />
+      <div className="image">
+        <img src={rocket.flickr_images[0]} alt={rocket.rocket_name} className="rocket-img" />
       </div>
 
       <div className="rocket-detail">
