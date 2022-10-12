@@ -1,10 +1,11 @@
+import Button from 'react-bootstrap/Button';
 import PropTypes from 'prop-types';
 import Img from './img/falcon1.jfif';
 
 const Rocket = (props) => {
   const { name, description } = props;
   return (
-    <div className="rocket-card">
+    <div className="rocket-card flex">
       <div className="rocket-image">
         <img src={Img} alt="rocket" className="rocket-img" />
       </div>
@@ -16,7 +17,7 @@ const Rocket = (props) => {
         <div className="rocket-description">
           <span>{description}</span>
         </div>
-        <button type="button" className="reserve-btn">Reserve Rocket</button>
+        <Button type="button" variant="primary" className="reserve-btn">Reserve Rocket</Button>
       </div>
     </div>
   );
