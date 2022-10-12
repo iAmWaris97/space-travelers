@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import Img from '../Navigation/img/planet.png';
+import Img from './img/falcon1.jfif';
 
 const Rocket = (props) => {
   const { name, description } = props;
