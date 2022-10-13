@@ -4,7 +4,6 @@ import Table from 'react-bootstrap/Table';
 const MissionList = ({ missionsProp }) => (
 
   <>
-    console.log(missionsProp)
     <Table striped bordered hover size="sm" style={{ marigin: '15px 25px' }}>
       <thead>
         <tr>
