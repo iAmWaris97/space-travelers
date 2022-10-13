@@ -11,7 +11,7 @@ const MissionList = ({ missionsProp, handleMissionJoin }) => (
           <th>Missision</th>
           <th>Description</th>
           <th>Status</th>
-          <th></th>
+          <th>   </th>
         </tr>
       </thead>
       <tbody>
@@ -19,7 +19,7 @@ const MissionList = ({ missionsProp, handleMissionJoin }) => (
 
       missionsProp.map((mission) => (
         <tr key={mission.mission_id} id={mission.mission_id}>
-          <td className='mission-name'>
+          <td className="mission-name">
             {' '}
             {mission.mission_name}
             {' '}
@@ -36,7 +36,7 @@ const MissionList = ({ missionsProp, handleMissionJoin }) => (
           </td>
           <td>
             {' '}
-            <button 
+            <button
               className="mission-btn"
               type="button"
               style={{
