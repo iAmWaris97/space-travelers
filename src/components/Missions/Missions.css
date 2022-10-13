@@ -6,3 +6,25 @@ table.table.table-sm.table-striped.table-bordered.table-hover{
   width: 90%;
   margin: 5px auto;
 }
+td{
+text-align: center;
+vertical-align: middle;
+}
+
+button.mission-btn{
+  border-radius: 3px;
+  white-space: nowrap;
+  padding: 5px;
+  border: 1px solid #373333;
+}
+.status-text{
+  text-transform: uppercase;
+  color: white;
+  border-radius: 6px;
+  background: #d3d3d3;
+  padding: 0 5px;
+}
+
+.mission-name{
+  font-weight: bold;
+}
