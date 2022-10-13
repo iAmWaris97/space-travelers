@@ -1,3 +1,7 @@
+*.active {
+  text-decoration: underline !important;
+}
+
 .flex {
   display: flex;
 }
