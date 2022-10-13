@@ -12,6 +12,7 @@ const Rockets = () => {
       dispatch(fetchRockets());
     }
   });
+
   return (
     <div className="rockets">
       {rocketsData.map((rocketData) => (
