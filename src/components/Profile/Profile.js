@@ -13,7 +13,7 @@ const Profile = () => {
     <Row className="row">
       <Col>
         <h4 className="missions-title">My Missions</h4>
-        <Table striped bordered>
+        <Table bordered>
           <tbody>
             {joinedMissions.map((mission) => (
               <tr key={mission.mission_id}>
