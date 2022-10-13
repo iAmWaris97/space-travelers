@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import Table from 'react-bootstrap/Table';
 
 const MissionList = ({ missionsProp }) => (
+
   <>
     <Table striped bordered hover size="sm" style={{ marigin: '15px 25px' }}>
       <thead>
@@ -14,6 +15,7 @@ const MissionList = ({ missionsProp }) => (
       </thead>
       <tbody>
         {
+
       missionsProp.map((mission) => (
         <tr key={mission.mission_id}>
           <td>
@@ -46,7 +48,13 @@ const MissionList = ({ missionsProp }) => (
 );
 
 MissionList.propTypes = {
-  missionsProp: PropTypes.string.isRequired,
+  missionsProp: PropTypes.arrayOf(
+    PropTypes.shape({
+      mission_id: PropTypes.string,
+      mission_name: PropTypes.string,
+      description: PropTypes.string,
+    }),
+  ).isRequired,
 };
 
 export default MissionList;
