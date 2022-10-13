@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
 import Table from 'react-bootstrap/Table';
+import './Missions.css';
 
 const MissionList = ({ missionsProp }) => (
 
   <>
-    <Table striped bordered hover size="sm" style={{ marigin: '15px 25px' }}>
+    <Table striped bordered hover size="sm">
       <thead>
         <tr>
           <th>Missision</th>
@@ -28,14 +29,22 @@ const MissionList = ({ missionsProp }) => (
             {mission.description}
             {' '}
           </td>
-          <td>
+          <td style={{ whiteSpace: 'nowrap', padding: '5px', verticalAlign: 'middle' }}>
             {' '}
             <span className="status-text" style={{ background: '#d3d3d3' }}> Not a member </span>
             {' '}
           </td>
           <td>
             {' '}
-            <button type="button" style={{ borderRadius: '8px' }}> Join mission </button>
+            <button
+              type="button"
+              style={{
+                borderRadius: '8px', whiteSpace: 'nowrap', padding: '5px', verticalAlign: 'middle',
+              }}
+            >
+              {' '}
+              Join mission
+            </button>
             {' '}
           </td>
 
