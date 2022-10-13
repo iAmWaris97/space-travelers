@@ -10,7 +10,7 @@ const Missions = () => {
     if (!missions.length) {
       dispatch(getMissions());
     }
-  }, []);
+  });
 
   const handleMissionJoin = (id) => {
     dispatch(joinMission(id));
