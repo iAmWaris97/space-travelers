@@ -3,13 +3,13 @@
 }
 
 table.table.table-sm.table-striped.table-bordered.table-hover {
-  width: 90%;
+  width: 94%;
   margin: 5px auto;
 }
 
 td {
-  text-align: center;
   vertical-align: middle;
+  padding-left: 5px;
 }
 
 button.mission-btn {
