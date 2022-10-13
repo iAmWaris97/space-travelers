@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getMissions } from '../../redux/Missions/missionsSlice';
+import { getMissions, joinMission } from '../../redux/Missions/missionsSlice';
 import MissionList from './MissionList';
 
 const Missions = () => {
@@ -10,12 +10,16 @@ const Missions = () => {
     if (!missions.length) {
       dispatch(getMissions());
     }
-  });
+  }, []);
+
+  const handleMissionJoin = (id) => {
+    dispatch(joinMission(id));
+  };
 
   return (
     <>
       <h1>Missions</h1>
-      <MissionList missionsProp={missions} />
+      <MissionList missionsProp={missions} handleMissionJoin={handleMissionJoin} />
     </>
   );
 };
