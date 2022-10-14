@@ -21,6 +21,8 @@
 - **Redux**
 - **SpaceX APIs**
 
+[Live Demo](https://space-owners-hub.netlify.app/)
+
 ## Getting Started
 
 ### Steps to run the project
