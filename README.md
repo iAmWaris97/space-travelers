@@ -80,7 +80,7 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 
 ## Acknowledgments
 
-> Special thanks to the co-creator of Redux (Dan Abramov) for his complete course on redux actions and store methodes.
+> Special thanks to the co-creator of Redux (Dan Abramov) for his complete course on redux actions and store methods.
 
 > And thanks to all the developers whose code, documentations, and efforts helped us doing this project.
 
