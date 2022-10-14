@@ -11,7 +11,7 @@ const Rockets = () => {
     if (!rocketsData.length) {
       dispatch(fetchRockets());
     }
-  });
+  }, [rocketsData, dispatch]);
 
   return (
     <div className="rockets">
