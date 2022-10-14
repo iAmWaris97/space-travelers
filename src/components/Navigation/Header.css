@@ -10,8 +10,8 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  border-bottom: 2px solid blue;
-  padding: 8px 30px;
+  border-bottom: 5px solid #1746a2;
+  padding: 16px 30px;
 }
 
 .logo {
@@ -25,16 +25,19 @@ header {
 }
 
 .logo-title {
-  font-size: x-large;
+  font-size: 30px;
+  color: #1746a2;
+  font-weight: 600;
 }
 
 .nav-list {
   gap: 10px;
+  margin-bottom: 0;
 }
 
-.nav-list li {
-  color: blue;
+.nav-list li a {
+  color: #ff731d;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
 }
