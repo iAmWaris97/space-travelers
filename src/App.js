@@ -13,6 +13,7 @@ function App() {
       <div className="container-fluid">
         <Routes>
           <Route path="/" element={<Rockets />} />
+          <Route path="/rockets" element={<Rockets />} />
           <Route path="/missions" element={<Missions />} />
           <Route path="/profile" element={<Profile />} />
         </Routes>
