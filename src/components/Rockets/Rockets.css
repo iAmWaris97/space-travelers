@@ -1,0 +1,26 @@
+.flex {
+  display: flex;
+}
+
+.rocket-card {
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.rockets {
+  margin-top: 20px;
+}
+
+.rocket-img {
+  background-color: red;
+  width: 400px;
+}
+
+.rocket-name {
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.rocket-description {
+  margin: 15px 0;
+}

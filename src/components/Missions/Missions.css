@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+table.table.table-sm.table-striped.table-bordered.table-hover {
+  width: 94%;
+  margin: 5px auto;
+}
+
+td {
+  vertical-align: middle;
+  padding-left: 5px;
+}
+
+button.mission-btn {
+  border-radius: 3px;
+  white-space: nowrap;
+  padding: 5px;
+  border: 1px solid #373333;
+}
+
+.status-text {
+  text-transform: uppercase;
+  color: white;
+  border-radius: 6px;
+  background: #d3d3d3;
+  padding: 0 5px;
+}
+
+.mission-name {
+  font-weight: bold;
+}
