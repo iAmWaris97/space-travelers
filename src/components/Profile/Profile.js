@@ -17,9 +17,9 @@ const Profile = () => {
           <tbody>
             {joinedMissions.map((mission) => (
               <tr key={mission.mission_id}>
-                <th className="reserved-rocket">
+                <td className="joined-mission">
                   {mission.mission_name}
-                </th>
+                </td>
               </tr>
             ))}
           </tbody>
@@ -31,9 +31,9 @@ const Profile = () => {
           <tbody>
             {reservedRockets.map((rocket) => (
               <tr key={rocket.rocket_id}>
-                <th className="reserved-rocket">
+                <td className="reserved-rocket">
                   {rocket.rocket_name}
-                </th>
+                </td>
               </tr>
             ))}
           </tbody>
